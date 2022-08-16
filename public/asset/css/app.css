@@ -1,0 +1,109 @@
+.login-page,
+.register-page {
+    background: #f0f0f0 !important;
+
+}
+
+.card-primary.card-outline {
+    border-top: 3px solid #ffd101 !important;
+}
+
+
+.sidebar li.nav-item {
+    border-bottom: 1px solid #9e9e9e29; !important;
+}
+
+#header-id {
+    background: #4c4c4c;
+    margin-top: 10px;
+}
+
+#header-setting-id {
+    background: #4c4c4c;
+    margin-top: 80px;
+}
+
+#forum-id {
+    background: #363636;
+    margin-top: 82px;
+}
+
+.link.active{
+    background-color: #efc51a !important;
+    color: #303031 !important;
+
+}
+
+.link:hover{
+    background-color: #efc51a !important;
+    color: #303031 !important;
+
+}
+
+.sidebar a {
+    color: white !important;
+    size: 16px;
+}
+
+.logo2 {
+    background: #9e9e9e29  !important;
+    border-color: #9e9e9e29  !important;
+}
+
+.logo1 {
+    height: 60px !important;
+}
+
+#example {
+    border-collapse: collapse !important;
+    background: white !important;
+}
+
+.card {
+    margin-top: 20px !important;
+    background: ghostwhite !important;
+}
+
+#example td{
+    font-size: 14px;
+}
+
+#example th{
+    font-size: 15px;
+}
+
+#title1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#btn1{
+    font-weight: 600;
+}
+
+.btn-primary1 {
+    color: #fff !important;
+    background-color: #f7b600 !important;
+    border-color: #f7b600 !important;
+    box-shadow: none;
+}
+
+.btn-primary1:hover {
+    color: #fff !important;
+    background-color: #cd9700 !important;
+    border-color: #cd9700 !important;
+}
+
+.btn-success1 {
+    color: #fff !important;
+    background-color: #009786 !important;
+    border-color: #009786 !important;
+    box-shadow: none;
+}
+
+.btn-success1:hover {
+    color: #fff !important;
+    background-color: #027165 !important;
+    border-color: #027165 !important;
+}
+

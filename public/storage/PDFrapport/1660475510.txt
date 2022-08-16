@@ -1,0 +1,193 @@
+add_shortcode( 'shortcode_formEstimation', function () {
+
+	$out = '<p></p>
+<html>
+<head>
+  <title> Estimation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>input[type="email"], input[type="number"], input[type="password"], input[type="reset"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], select, textarea {
+    color: #666;
+    padding: .375rem .75rem !important;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white !important;
+    border-color: #eaeaea;}</style>
+</head>
+<body>
+
+ 
+ 
+ 
+  
+<div class="container mt-5">';
+	if(isset($_GET["msg"]))
+
+	{ $out .= '  <div class="alert alert-success"> '.$_GET["msg"].'</div>';}
+
+      
+    
+ $out .= '<form  method="POST" action="/DASH/aEs/" >
+                    
+ 
+		<div class="row">
+          <div class="col-sm-3">
+              <div class="form-group">
+                <label for="inputName">Nom</label>
+                <input type="text" name="nom" id="inputName"  class="form-control" required>
+              </div>
+            </div>
+              <div class="col-sm-3">
+              <div class="form-group">
+                <label for="inputName2">Prénom</label>
+                <input type="text" id="inputName2" class="form-control"   name="prenom" required>
+              </div>
+              </div>
+            </div>
+
+           <div class="row">
+          <div class="col-sm-3">
+              <div class="form-group">
+                <label for="inputtel" required>N tel</label>
+                <input type="tel"   placeholder="0239 45 68 78"  name="nTel" id="inputtel" class="form-control" required>
+               
+              </div>
+        </div>
+       
+
+             <div class="col-sm-3">
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email"  id="Email" class="form-control"  name="email" required>
+              </div>
+              </div>
+            </div>
+            <br>
+              <div class="row">
+          <div class="col-sm-6">
+               <div class="form-group">
+                <label for="Localisation" required>Commune</label>
+               
+               
+                <select  class="form-control"    name="Localisation" required>
+                    <option>  </option>
+                   <option> Alger-Centre </option> <option>Sidi M Hamed </option>
+                    <option>El Madania </option>
+                    <option>Belouizdad </option> 
+                    <option>Bab El Oued </option>
+                    <option>Bologhine </option> 
+                    <option>Casbah </option> 
+                    <option>Oued Koriche </option> <option>Bir Mourad Raïs </option>
+                    <option>El Biar </option> 
+                      <option>Bouzareah </option>
+                      <option>Birkhadem </option> 
+                      <option>El Harrach </option>
+                      <option>Baraki </option>
+                      <option>Oued Smar </option>
+                      <option>Bachdjerrah </option>
+                      <option>Hussein Dey </option> <option>Kouba </option>
+                      <option>Bourouba </option> 
+                      <option>Dar El Beïda </option>
+                      <option> Bab Ezzouar </option>
+                       <option> Ben Aknoun </option>
+                       <option>Dely Ibrahim </option>
+                       <option>El Hammamet </option> 
+                       <option>Raïs Hamidou </option> 
+                       <option>Djasr Kasentina </option> 
+                       <option>El Mouradia </option> <option>Hydra </option>
+                       <option>Mohammadia </option>
+                       <option>Bordj El Kiffan </option>
+                       <option>El Magharia </option> 
+                       <option>Beni Messous </option>
+                       <option>Les Eucalyptus </option> 
+                       <option>Birtouta </option> 
+                       <option>Tessala El Merdja </option> 
+                       <option>Ouled Chebel </option> 
+                       <option>Sidi Moussa </option> 
+                       <option>Aïn Taya </option>
+                       <option>Bordj El Bahri </option> 
+                       <option>El Marsa </option> 
+                       <option>H Raoua </option> 
+                       <option>Rouïba </option>
+                       <option>Reghaïa </option> 
+                       <option>Aïn Benian </option> <option>Staoueli </option> 
+                       <option>Zeralda </option>
+                       <option>Mahelma </option> 
+                       <option>Rahmania </option>
+                       <option>Souidania </option>
+                       <option>Cheraga </option> 
+                       <option>Ouled Fayet </option> 
+                       <option>El Achour </option> <option>Draria </option> 
+                       <option>Douera </option> 
+                       <option>Baba Hassen </option> 
+                       <option>Khraicia </option> 
+                       <option>Saoula</option>
+                    </select>
+              </div>
+        </div>
+        </div>
+            
+            <div class="row">
+          <div class="col-sm-3">
+               <div class="form-group">
+                <label for="DateRDV">Date RDV</label>
+                <input type="date"  id="Email" class="form-control"  name="DateRDV" required>
+              </div>
+              
+        </div>
+       
+
+             <div class="col-sm-3">
+              <div class="form-group">
+                <label for="HeureRDV">Heure RDV </label>
+                <select  class="form-control"  name="HeureRDV" required>
+                    <option>Matin</option>
+                    <option>Après-Midi</option>
+                    <option>Soir</option>
+                    </select>
+              </div>
+              </div>
+            </div>
+            
+             <div class="row">
+          <div class="col-sm-6">
+               <div class="form-group">
+                <label for="Localisation" required>Type de bien</label>
+              
+					<select  class="form-control" name="Delai" >
+        <option> </option>
+                  <option>Villa </option>
+                  <option>Terrain </option>
+                  <option>Local</option>
+                  <option>Studio </option>
+                 <option>Usine </option>
+                 <option>Hangar</option>
+                 <option>Autre </option>
+                    </select>
+               
+              </div>
+        </div>
+        </div>
+            <br>
+
+  <div class="row">
+   
+      <div class="input-check input-mandatory"><input type="checkbox" name="condition" value="oui" required=""><label tabindex="0" for="rgpd">  Je certifie avoir lu et accepté les <a href="#">conditions générales</a> et la <a href="#">politique de confidentialité</a> de la société COMM IMMO</label></div>
+
+
+          <div class="col-sm-6">
+<button type="submit" class="btn btn-info">Valider
+</button>
+</div>
+</div>
+</form>
+
+</div>
+</body>
+</html>';
+
+	return $out;
+} );
